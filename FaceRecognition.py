@@ -8,6 +8,7 @@ from PIL import Image,ImageTk
 root = Tk()
 menubar = Menu(root)
 
+
 def Browse():    
     global image_path
     image_path = filedialog.askopenfilename(
