@@ -8,7 +8,6 @@ from PIL import Image,ImageTk
 root = Tk()
 menubar = Menu(root)
 
-
 def Browse():    
     global image_path
     image_path = filedialog.askopenfilename(
@@ -50,9 +49,7 @@ def Detect():
 label = Label(root)
 label.pack()
 
-
 file = Menu(menubar,tearoff=1)
-
 file.add_command(label="Open",command=Browse)
 file.add_command(label="Detect Faces",command=Detect)
 
